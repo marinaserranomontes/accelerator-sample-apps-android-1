@@ -902,7 +902,7 @@ public class MainActivity extends AppCompatActivity implements ActionBarFragment
 
     private void remoteAnnotations() {
         try {
-            mRemoteAnnotationsView = new AnnotationsView(this, mWrapper.getSession(), OpenTokConfig.API_KEY, mWrapper.getRemoteConnId(mScreenRemoteId));
+            mRemoteAnnotationsView = new AnnotationsView(this, mWrapper.getSession(), OpenTokConfig.API_KEY, mWrapper.geRemoteConnId(mScreenRemoteId));
             mRemoteAnnotationsView.setVideoRenderer(mRemoteRenderer);
             mRemoteAnnotationsView.attachToolbar(mAnnotationsToolbar);
             mRemoteAnnotationsView.setAnnotationsListener(this);
